@@ -20,7 +20,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/olive/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -125,7 +127,34 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Green Thumb",
+          "effect": "mill_income",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Forager’s Luck",
+          "effect": "bread_gathering_speed",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -137,7 +166,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/edwin/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -242,7 +273,34 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Demolitions Expert",
+          "effect": "quarry_income",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Stone Mining",
+          "effect": "stone_gathering_speed",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -254,7 +312,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/forrest/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -359,7 +419,34 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Woodland Inheritor",
+          "effect": "logging_income",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Master Woodcutter",
+          "effect": "wood_gathering_speed",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -371,7 +458,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/seth/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -476,7 +565,34 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Burnished Iron",
+          "effect": "iron_mine_income",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Craftsmanship",
+          "effect": "iron_mining_speed",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -488,7 +604,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/quinn/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -593,7 +711,34 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Sixth Sense",
+          "effect": "damage_taken_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Precision Shot",
+          "effect": "damage_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -605,7 +750,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/diana/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -710,7 +857,34 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Iron Constitution",
+          "effect": "stamina_cost_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            10,
+            12,
+            15,
+            18,
+            20
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Quick Paced",
+          "effect": "wilderness_march_speed",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -722,7 +896,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/amane/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -827,7 +1003,34 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Tri-Phalanx",
+          "effect": "attack_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Exorcism",
+          "effect": "healing_speed_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -839,7 +1042,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/yeonwoo/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -944,7 +1149,34 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "On Guard",
+          "effect": "lethality_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Well-Traveled",
+          "effect": "research_speed_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            3,
+            6,
+            9,
+            12,
+            15
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -956,7 +1188,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/gordon/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1061,7 +1295,34 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Super Nutrients",
+          "effect": "health_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Trash Talk",
+          "effect": "attack_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -1073,7 +1334,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/chenko/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1178,7 +1441,34 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Stand of Arms",
+          "effect": "lethality_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Shield Wall",
+          "effect": "damage_taken_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -1190,7 +1480,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/fahd/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1295,7 +1587,34 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Desert Eclipse",
+          "effect": "enemy_damage_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Pathfinder",
+          "effect": "hunting_march_speed",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -1307,7 +1626,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/howard/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1412,7 +1733,34 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Defenders’ Edge",
+          "effect": "damage_taken_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Weaken",
+          "effect": "enemy_attack_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -1424,7 +1772,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/saul/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1529,7 +1879,73 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Taskforce Training",
+          "effect": "defense_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "conditions": {},
+          "additionalEffects": [
+            {
+              "effect": "health_up",
+              "metric": "percent",
+              "valuesBySkillLevel": [
+                3,
+                6,
+                9,
+                12,
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Resourceful",
+          "effect": "construction_speed_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            3,
+            6,
+            9,
+            12,
+            15
+          ],
+          "conditions": {},
+          "additionalEffects": [
+            {
+              "effect": "construction_cost_down",
+              "metric": "percent",
+              "valuesBySkillLevel": [
+                3,
+                6,
+                9,
+                12,
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Positional Batter",
+          "effect": "lethality_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -1541,7 +1957,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/jabel/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1646,7 +2064,47 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Rally Flag",
+          "effect": "damage_taken_chance_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            8,
+            16,
+            24,
+            32,
+            40
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Hero’s Domain",
+          "effect": "damage_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Youthful Rage",
+          "effect": "lethality_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -1658,7 +2116,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/helga/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1763,7 +2223,47 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Oath of Guardian",
+          "effect": "damage_taken_chance_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            8,
+            16,
+            24,
+            32,
+            40
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Echoes of Valhalla",
+          "effect": "attack_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Nature’s Balance",
+          "effect": "lethality_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -1775,7 +2275,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/amadeus/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1880,7 +2382,47 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Battle Ready",
+          "effect": "lethality_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Way of the Blade",
+          "effect": "attack_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Unrighteous Strike",
+          "effect": "damage_dealt_chance_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            8,
+            16,
+            24,
+            32,
+            40
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -1892,7 +2434,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/marlin/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1997,7 +2541,47 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Wild Card",
+          "effect": "damage_dealt_chance_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            8,
+            16,
+            24,
+            32,
+            40
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Rumhead",
+          "effect": "enemy_lethality_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Dynamo",
+          "effect": "damage_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -2009,7 +2593,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/hilde/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -2114,7 +2700,60 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Noble Path",
+          "effect": "attack_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            3,
+            6,
+            9,
+            12,
+            15
+          ],
+          "conditions": {},
+          "additionalEffects": [
+            {
+              "effect": "defense_up",
+              "metric": "percent",
+              "valuesBySkillLevel": [
+                2,
+                4,
+                6,
+                8,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Elixir of Strength",
+          "effect": "damage_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            120,
+            140,
+            160,
+            180,
+            200
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Trial by Fire",
+          "effect": "damage_taken_chance_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            8,
+            16,
+            24,
+            32,
+            40
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -2126,7 +2765,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/zoe/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://kingshotdata.com/heroes/zoe/",
+        "skillVerification": "primary-checked"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -2288,7 +2929,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/jaeger/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -2393,7 +3036,47 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "The Tempest",
+          "effect": "damage_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            8,
+            16,
+            24,
+            32,
+            40
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "The Resistance",
+          "effect": "enemy_lethality_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "The Celebration",
+          "effect": "health_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -2405,7 +3088,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/petra/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://kingshotdata.com/heroes/petra/",
+        "skillVerification": "primary-checked"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -2568,7 +3253,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/eric/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -2673,7 +3360,47 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Holy Warrior",
+          "effect": "enemy_troop_attack_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Conviction",
+          "effect": "damage_taken_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Exhortation",
+          "effect": "health_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -2685,7 +3412,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/rosa/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://kingshotdata.com/heroes/rosa/",
+        "skillVerification": "primary-checked"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -2844,7 +3573,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/margot/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -2949,7 +3680,47 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Warbringer",
+          "effect": "attack_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Subterfuge",
+          "effect": "dodge_probability_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Sleight Hand",
+          "effect": "damage_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            120,
+            140,
+            160,
+            180,
+            200
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -2961,7 +3732,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/alcar/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -3066,7 +3839,73 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Rescuing Hands",
+          "effect": "damage_taken_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            14,
+            28,
+            42,
+            56,
+            70
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Praetorian Will",
+          "effect": "infantry_damage_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ],
+          "conditions": {},
+          "additionalEffects": [
+            {
+              "effect": "cavalry_archer_damage_up",
+              "metric": "percent",
+              "valuesBySkillLevel": [
+                2,
+                4,
+                6,
+                8,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Capre Diem",
+          "effect": "extra_damage_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            12,
+            24,
+            36,
+            48,
+            60
+          ],
+          "conditions": {},
+          "additionalEffects": [
+            {
+              "effect": "enemy_damage_taken_up",
+              "metric": "percent",
+              "valuesBySkillLevel": [
+                5,
+                10,
+                15,
+                20,
+                25
+              ]
+            }
+          ]
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -3078,7 +3917,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/vivian/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -3183,7 +4024,60 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Crouching Tiger",
+          "effect": "enemy_damage_taken_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Focus Fire",
+          "effect": "extra_damage_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ],
+          "conditions": {},
+          "additionalEffects": [
+            {
+              "effect": "enemy_damage_taken_up",
+              "metric": "percent",
+              "valuesBySkillLevel": [
+                5,
+                7.5,
+                10,
+                12.5,
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Trap of Greed",
+          "effect": "extra_damage_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            12,
+            24,
+            36,
+            48,
+            60
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -3195,7 +4089,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/thrud/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -3300,7 +4196,73 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Battle Hunger",
+          "effect": "damage_taken_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            3,
+            6,
+            9,
+            12,
+            15
+          ],
+          "conditions": {},
+          "additionalEffects": [
+            {
+              "effect": "damage_up",
+              "metric": "percent",
+              "valuesBySkillLevel": [
+                3,
+                6,
+                9,
+                12,
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Reckless Charge",
+          "effect": "extra_damage_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Ancestral Guidance",
+          "effect": "damage_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {},
+          "additionalEffects": [
+            {
+              "effect": "damage_taken_down",
+              "metric": "percent",
+              "valuesBySkillLevel": [
+                5,
+                10,
+                15,
+                20,
+                25
+              ]
+            }
+          ]
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -3312,7 +4274,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/long-fei/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
+        "skillVerification": "secondary-only"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -3417,7 +4381,47 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Mighty Paragon",
+          "effect": "damage_taken_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Celestial Sustenance",
+          "effect": "defense_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Art of War",
+          "effect": "damage_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            120,
+            140,
+            160,
+            180,
+            200
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -3429,7 +4433,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/yang/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://kingshotdata.com/heroes/yang/",
+        "skillVerification": "primary-checked"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -3592,7 +4598,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/sophia/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://kingshotdata.com/heroes/sophia/",
+        "skillVerification": "primary-checked"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -3697,7 +4705,52 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Arcane Pact",
+          "effect": "damage_taken_reduction_proc_chance",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            8,
+            16,
+            24,
+            32,
+            40
+          ],
+          "conditions": {
+            "damageReductionPercent": 50,
+            "perTurn": true
+          }
+        },
+        {
+          "name": "Terror - Deathblow",
+          "effect": "cavalry_bonus_damage_vs_terrified",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            40,
+            80,
+            120,
+            160,
+            200
+          ],
+          "conditions": {
+            "everyTurns": 2
+          }
+        },
+        {
+          "name": "Terror - Annihilation",
+          "effect": "squad_bonus_damage_vs_terrified",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            15,
+            30,
+            45,
+            60,
+            75
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -3709,7 +4762,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/triton/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://kingshotdata.com/heroes/triton/",
+        "skillVerification": "primary-checked"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -3814,7 +4869,60 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Command of Power",
+          "effect": "squad_defense_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Warfare of Power",
+          "effect": "squad_skill_damage_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Oath of Power",
+          "effect": "infantry_health_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "conditions": {},
+          "additionalEffects": [
+            {
+              "effect": "cavalry_archer_health_up",
+              "metric": "percent",
+              "valuesBySkillLevel": [
+                6,
+                12,
+                18,
+                24,
+                30
+              ]
+            }
+          ]
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -3826,7 +4934,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/wee-woo/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://kingshotdata.com/heroes/wee-woo/",
+        "skillVerification": "primary-checked"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -3931,7 +5041,75 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Artillerymen",
+          "effect": "squad_attack_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            3,
+            6,
+            9,
+            12,
+            15
+          ],
+          "conditions": {},
+          "additionalEffects": [
+            {
+              "effect": "squad_lethality_up",
+              "metric": "percent",
+              "valuesBySkillLevel": [
+                2,
+                4,
+                6,
+                8,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chain Shelling",
+          "effect": "damage_dealt_to_archer_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "conditions": {},
+          "additionalEffects": [
+            {
+              "effect": "damage_dealt_to_infantry_up",
+              "metric": "percent",
+              "valuesBySkillLevel": [
+                5,
+                10,
+                15,
+                20,
+                25
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boom Boom",
+          "effect": "bonus_damage_proc_chance",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {
+            "bonusDamagePercent": 50
+          }
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -3943,7 +5121,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/ava/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://kingshotdata.com/heroes/ava/",
+        "skillVerification": "primary-checked"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -4048,7 +5228,50 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Dissolution",
+          "effect": "enemy_squad_defense_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Chiaroscuro",
+          "effect": "enemy_damage_taken_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {
+            "durationTurns": 2,
+            "everyTurns": 4
+          }
+        },
+        {
+          "name": "Light and Cold",
+          "effect": "squad_lethality_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -4060,7 +5283,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/charles/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://kingshotdata.com/heroes/charles/",
+        "skillVerification": "primary-checked"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -4165,7 +5390,47 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Intimidation",
+          "effect": "enemy_squad_lethality_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Iron Bodies",
+          "effect": "squad_damage_taken_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Great Justice",
+          "effect": "squad_health_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -4177,7 +5442,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/luna/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://kingshotdata.com/heroes/luna/",
+        "skillVerification": "primary-checked"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -4282,7 +5549,52 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Driving Light",
+          "effect": "squad_attack_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Woodland Vengeance",
+          "effect": "enemy_squad_attack_down",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {
+            "durationTurns": 1,
+            "everyTurns": 2
+          }
+        },
+        {
+          "name": "Arrowflash",
+          "effect": "archer_extra_damage_percent",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {
+            "everyAttack": true
+          }
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -4294,7 +5606,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/liz/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://kingshotdata.com/heroes/liz/",
+        "skillVerification": "primary-checked"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -4399,7 +5713,52 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Alloyed Agent",
+          "effect": "squad_lethality_proc_chance",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {
+            "lethalityBuffPercent": 50,
+            "perTurn": true
+          }
+        },
+        {
+          "name": "Vitalis Potion",
+          "effect": "squad_health_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Horsemaster",
+          "effect": "cavalry_bonus_damage_percent",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            30,
+            60,
+            90,
+            120,
+            150
+          ],
+          "conditions": {
+            "procChancePercent": 50
+          }
+        }
+      ],
       "conquestBaseByHeroLevel": null
     },
     {
@@ -4411,7 +5770,9 @@
       "source": {
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/diego/",
-        "verifiedOn": "2026-10-10"
+        "verifiedOn": "2026-10-10",
+        "skillSource": "https://kingshotdata.com/heroes/diego/",
+        "skillVerification": "primary-checked"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -4516,7 +5877,62 @@
           100
         ]
       },
-      "expeditionSkills": [],
+      "expeditionSkills": [
+        {
+          "name": "Defensive Guidance",
+          "effect": "squad_defense_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            3,
+            6,
+            9,
+            12,
+            15
+          ],
+          "conditions": {},
+          "additionalEffects": [
+            {
+              "effect": "squad_health_up",
+              "metric": "percent",
+              "valuesBySkillLevel": [
+                2,
+                4,
+                6,
+                8,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Piercing Aura",
+          "effect": "bonus_damage_percent",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {
+            "procChancePercent": 50
+          }
+        },
+        {
+          "name": "Cold Frost",
+          "effect": "squad_lethality_up",
+          "metric": "percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        }
+      ],
       "conquestBaseByHeroLevel": null
     }
   ]
