@@ -1,44 +1,76 @@
-# Kingshot Hero Reference — public dataset (research preview)
+# Kingshot hero reference database
 
-This is the standalone public reference repository **Boltotelli/kingshot-data**. It does **not** use Supabase, Vercel, NAP, or player-account storage.
+**Public, versioned hero data. Independent of Supabase.**  
+Data status: **research preview**, updated **2026-10-10**.
 
-## Files
+This repository contains public Kingshot hero reference values for the separate Welcome-NRW Bear Optimizer project. It must NEVER store any player's game ID, player name, Discord ID, account details, private build/roster, screenshots or credentials. Player records, if built later, belong in a separate PRIVATE GitHub repository and must be read via a secure backend.
 
-- **catalog.v1.json:** 37 hero names and troop types from the existing Bear Optimizer catalog; NOT proof of ownership or complete stats.
-- **heroes.v1.json:** source-aware records, explicit null for unknown progression.
-- **schema.v1.json:** public, versioned JSON Schema.
-- **test-hero-reference.cjs:** portable validation (run with Node.js).
+## Data coverage
 
-## Source coverage (2026-10-10)
+| Coverage | Count | Source assurance |
+|---|---:|---|
+| Canonical hero names and troop types | **37/37** | Checked against the app's existing catalog |
+| Generation and expedition attack/defense bonuses at all **31 progression rows** | **37/37** | Reference tables, with 28 source maxima cross-checked |
+| Expedition skill names and numeric values at **5 skill levels** | **37/37** | 12 checked against Kingshot Database; 25 older sets remain secondary-source pending direct verification |
+| Full conquest base stats separately for every hero level 1–80 | **0/37** | **Not sourced; explicitly null** |
+| Full widget/exclusive-weapon progression and reliable Bear damage simulation | Not yet | **Not implemented** |
 
-| Hero | Type | Generation | Star progression (31 source rows) | Expedition skills (3 × 5 levels) | Base per hero level 1–80 |
-| --- | --- | --- | --- | --- | --- |
-| Yang | Archer | 6 | Sourced | Sourced | Unknown |
-| Rosa | Archer | 4 | Sourced | Sourced | Unknown |
-| Petra | Cavalry | 3 | Sourced | Sourced | Unknown |
-| Zoe | Infantry | 2 | Sourced | Sourced | Unknown |
-| Other 33 catalog heroes | Mixed | Not yet verified | Unknown | Unknown | Unknown |
+Rare and Epic heroes typically have **two** expedition skills; legendary heroes have **three**. Some skills contain **two simultaneous attributes**, represented by the optional `additionalEffects` array. All effects are reference facts, NOT automatically applicable damage multipliers.
 
-Sources: <https://kingshotdata.com/heroes/yang/>, <https://kingshotdata.com/heroes/rosa/>, <https://kingshotdata.com/heroes/petra/>, <https://kingshotdata.com/heroes/zoe/>.
+Notable independently identified progression exceptions: **Diana** (max **110.09%**) differs from other Epic Gen-1 heroes such as Howard (**140.11%**). **Amadeus** (max **260.21%**) differs from other Legendary Gen-1 heroes such as Helga (**200.16%**). These two have their own 31-row tables, not guessed generation averages.
 
-The source lists **31 ordered progression rows**. An exact mapping from row 1–31 to the game's star-plus-tier notation has NOT been verified. Do NOT treat row 29 as a certain 4-star T4 without validating that mapping.
+## Exact stars and partial tiers — independently validated
 
-The sourced expedition Attack/Defense percentages are **not** final screenshot values including gear, buffs, or combat modifiers. Website Conquest-stat examples do **not** provide a complete 1–80 hero base table, so that field is unknown. Skill effects are sourced but they are not automatically additive damage multipliers. A trustworthy Bear combat model still needs actual battle formulas, conditions, timing and stacking rules.
+The source reference's 31 rows correspond to **0★, five partial increments, 1★, ... 5★**:
 
-**The existing Bear advisor has NOT been wired to these JSON files. Its Yang/Rosa priority is still a provisional qualitative heuristic, not a damage-model result.**
+```
+sourceRow (1-based) = 6 * completedStars + partialTier + 1
+arrayIndex (0-based) = 6 * completedStars + partialTier
+```
 
-## Privacy
+`completedStars` is 0 through 5. `partialTier` is 0 through 5, except that full 5★ requires tier 0.
 
-PUBLIC HERO DATA ONLY. No player IDs, player aliases, saved personal rosters, screenshots, Discord identifiers, email addresses, credentials, tokens or secrets in this repository.
+| Display | Row | Total shards spent since 0★ |
+|---|---:|---:|
+| 0★ | 1 | 0 |
+| 1★ | 7 | 10 |
+| 2★ | 13 | 50 |
+| 3★ | 19 | 165 |
+| 4★ | 25 | 465 |
+| 4★ T4 | **29** | 865 |
+| 5★ | 31 | **1,065** |
 
-A future player registry belongs in a **separate private** repository (suggested name **Boltotelli/kingshot-players**), never GitHub Pages. Private player data requires a server-side authenticated API with narrowly scoped GitHub permissions. No GitHub access tokens in public browser JS.
+Per-full-star costs are **10 + 40 + 115 + 300 + 600 = 1,065**. The independent Kingshot shard calculators use the same six steps per star, validating the exact row indices in the hero reference tables.
 
-## Move into an independent GitHub repository
+The 31 individual mappings, per-step costs and cumulative costs are in [star-tiers.v1.json](star-tiers.v1.json).
 
-The original seed was prepared under the isolated `welcome-nrw` Bear prototype branch. This repository is now its independent public home. Do not enable runtime use in the Bear Optimizer until the progression mapping, additional hero stats and model assumptions are verified.
+**Data-contract caveat:** The legacy field `shardsToNextRow` in `heroes.v1.json` is inherited from the initial schema. In the source table its number is actually the cost to **reach the current row**, not the cost after it. Use `star-tiers.v1.json` for unambiguous semantics; the legacy name should be removed by a future versioned migration.
 
-Run: **node test-hero-reference.cjs** from this directory.
+## Files and validation
 
-Checks include catalog parity, unique IDs, 31 finite progression rows, nondecreasing progression, 5 values for each of 3 expedition skills, explicit nulls for unsourced data and absence of player keys. Changes to the public data contract require an explicit schema version bump.
+- [heroes.v1.json](heroes.v1.json): complete public 37-hero index, 31 values per hero, skills with separate provenance and explicit null for unsourced 1–80 bases.
+- [star-tiers.v1.json](star-tiers.v1.json): verified progression and shard-cost mapping.
+- [catalog.v1.json](catalog.v1.json): name and troop-class index.
+- [schema.v1.json](schema.v1.json): strict versioned JSON Schema, including provenance, multiple skill effects and public-only properties.
+- [test-hero-reference.cjs](test-hero-reference.cjs): deterministic coverage, source maxima, star math, privacy and corruption regressions.
+- [.github/workflows/validate.yml](.github/workflows/validate.yml): run JS tests and validate JSON against the schema on every change.
 
-No app, production or Supabase changes are included in this research preview.
+Run locally: `node test-hero-reference.cjs`. The GitHub Actions workflow also validates the JSON Schema with Python `jsonschema`.
+
+## References and provenance
+
+Each hero has its own original-reference URL in `source.stats`. Main dataset:
+
+- [Kingshot Database](https://kingshotdata.com/category/heroes/) — individual hero progression tables and skill values.
+- [Kingshot Hero Shards](https://kingshotdata.kr/en/database/hero-shards.html), [Kingshot Alliance Command](https://www.kingshotcommand.com/hero-shards), [Kingshot.net Shard Calculator](https://v2.kingshot.net/hero-shard-calculator) — independent shard/tier mapping.
+- [g2384/Kingshot-Data](https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json) — numeric skill reference for **25** older heroes pending line-by-line comparison with the primary source. These 25 records carry `skillVerification: "secondary-only"`, not `primary-checked`.
+
+Published game-guide figures may occasionally differ by 0.01 percentage points due to rounding. We preserve the named primary source's values and never manufacture absent rows. Skill `conditions` are documented where directly verified; empty conditions means **not yet recorded**, NOT "always active."
+
+**Not a damage model:** The Bear Optimizer's existing Yang/Rosa preference is a provisional heuristic and is NOT yet replaced or validated by this data. The 31 hero bonuses alone do not specify skill proc timing, stacking, battle damage, widget damage or complete troop interactions. Do not infer an exact best leader from these JSON values alone.
+
+## Privacy and future architecture
+
+The reference repository is PUBLIC. The future player-name/game-ID mapping must be in a **separately secured PRIVATE repository** with restricted GitHub permissions and a server-side read/write API. Never commit those records, tokens or authentication code here, or embed a private GitHub token in public front-end JavaScript.
+
+This repository has no connection to Supabase, the NAP tracker, Welcome-NRW production or player-account storage. Future integration into Welcome-NRW should be staged and tested, not silently deployed.
