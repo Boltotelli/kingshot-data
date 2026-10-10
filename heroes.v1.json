@@ -7,7 +7,7 @@
     "31 expedition ATK/DEF source-table rows populated for all 37 heroes; exceptional Amadeus and Diana progression use distinct, directly read primary sources.",
     "Verified star mapping: one-based row = 6*fullStars + partialTiers + 1; 1,065 shard costs in blocks 10/40/115/300/600.",
     "Legacy 'shardsToNextRow' JSON key describes costs printed for REACHING each row; row 1=0, row 31=100.",
-    "Hero skills have separate source provenance. Complete level-1-to-80 conquest bases are not known and remain null.",
+    "All 37 sets of normal expedition skills have been cross-checked with their individual Kingshot Database hero pages. Marlin has only TWO regular expedition skills; never substitute an exclusive-weapon skill.",
     "No personal player IDs, names, inventories, screenshots or account records allowed."
   ],
   "records": [
@@ -21,8 +21,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/olive/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/olive/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -167,8 +168,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/edwin/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/edwin/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -313,8 +315,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/forrest/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/forrest/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -459,8 +462,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/seth/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/seth/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -605,8 +609,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/quinn/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/quinn/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -736,7 +741,9 @@
             40,
             50
           ],
-          "conditions": {}
+          "conditions": {
+            "procChancePercent": 50
+          }
         }
       ],
       "conquestBaseByHeroLevel": null
@@ -751,8 +758,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/diana/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/diana/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -897,8 +905,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/amane/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/amane/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1043,8 +1052,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/yeonwoo/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/yeonwoo/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1189,8 +1199,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/gordon/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/gordon/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1335,8 +1346,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/chenko/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/chenko/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1481,8 +1493,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/fahd/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/fahd/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1627,8 +1640,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/howard/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/howard/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1773,8 +1787,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/saul/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/saul/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -1933,7 +1948,7 @@
           ]
         },
         {
-          "name": "Positional Batter",
+          "name": "Positional Battler",
           "effect": "lethality_up",
           "metric": "percent",
           "valuesBySkillLevel": [
@@ -1958,8 +1973,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/jabel/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/jabel/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -2076,7 +2092,9 @@
             32,
             40
           ],
-          "conditions": {}
+          "conditions": {
+            "damageReductionPercent": 50
+          }
         },
         {
           "name": "Hero’s Domain",
@@ -2089,7 +2107,9 @@
             40,
             50
           ],
-          "conditions": {}
+          "conditions": {
+            "procChancePercent": 50
+          }
         },
         {
           "name": "Youthful Rage",
@@ -2117,8 +2137,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/helga/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/helga/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -2276,8 +2297,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/amadeus/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/amadeus/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -2420,7 +2442,9 @@
             32,
             40
           ],
-          "conditions": {}
+          "conditions": {
+            "damageDealtIncreasePercent": 50
+          }
         }
       ],
       "conquestBaseByHeroLevel": null
@@ -2435,8 +2459,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/marlin/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/marlin/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -2553,7 +2578,9 @@
             32,
             40
           ],
-          "conditions": {}
+          "conditions": {
+            "damageDealtIncreasePercent": 50
+          }
         },
         {
           "name": "Rumhead",
@@ -2566,20 +2593,10 @@
             40,
             50
           ],
-          "conditions": {}
-        },
-        {
-          "name": "Dynamo",
-          "effect": "damage_up",
-          "metric": "percent",
-          "valuesBySkillLevel": [
-            10,
-            20,
-            30,
-            40,
-            50
-          ],
-          "conditions": {}
+          "conditions": {
+            "procChancePercent": 20,
+            "durationTurns": 2
+          }
         }
       ],
       "conquestBaseByHeroLevel": null
@@ -2594,8 +2611,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/hilde/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/hilde/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -2738,7 +2756,9 @@
             180,
             200
           ],
-          "conditions": {}
+          "conditions": {
+            "procChancePercent": 25
+          }
         },
         {
           "name": "Trial by Fire",
@@ -2930,8 +2950,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/jaeger/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/jaeger/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -3048,7 +3069,10 @@
             32,
             40
           ],
-          "conditions": {}
+          "conditions": {
+            "procChancePercent": 20,
+            "durationTurns": 3
+          }
         },
         {
           "name": "The Resistance",
@@ -3061,7 +3085,10 @@
             40,
             50
           ],
-          "conditions": {}
+          "conditions": {
+            "procChancePercent": 20,
+            "durationTurns": 2
+          }
         },
         {
           "name": "The Celebration",
@@ -3254,8 +3281,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/eric/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/eric/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -3574,8 +3602,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/margot/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/margot/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -3718,7 +3747,9 @@
             180,
             200
           ],
-          "conditions": {}
+          "conditions": {
+            "procChancePercent": 25
+          }
         }
       ],
       "conquestBaseByHeroLevel": null
@@ -3733,8 +3764,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/alcar/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/alcar/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -3851,7 +3883,14 @@
             56,
             70
           ],
-          "conditions": {}
+          "conditions": {
+            "everyTurns": 5,
+            "durationTurns": 2,
+            "appliesTo": [
+              "infantry",
+              "archer"
+            ]
+          }
         },
         {
           "name": "Praetorian Will",
@@ -3880,7 +3919,7 @@
           ]
         },
         {
-          "name": "Capre Diem",
+          "name": "Carpe Diem",
           "effect": "extra_damage_up",
           "metric": "percent",
           "valuesBySkillLevel": [
@@ -3890,7 +3929,9 @@
             48,
             60
           ],
-          "conditions": {},
+          "conditions": {
+            "durationTurns": 1
+          },
           "additionalEffects": [
             {
               "effect": "enemy_damage_taken_up",
@@ -3918,8 +3959,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/vivian/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/vivian/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -4049,7 +4091,9 @@
             80,
             100
           ],
-          "conditions": {},
+          "conditions": {
+            "everyAttacks": 4
+          },
           "additionalEffects": [
             {
               "effect": "enemy_damage_taken_up",
@@ -4075,7 +4119,9 @@
             48,
             60
           ],
-          "conditions": {}
+          "conditions": {
+            "everyAttacks": 4
+          }
         }
       ],
       "conquestBaseByHeroLevel": null
@@ -4090,8 +4136,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/thrud/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/thrud/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -4234,7 +4281,9 @@
             80,
             100
           ],
-          "conditions": {}
+          "conditions": {
+            "procChancePercent": 20
+          }
         },
         {
           "name": "Ancestral Guidance",
@@ -4247,7 +4296,10 @@
             20,
             25
           ],
-          "conditions": {},
+          "conditions": {
+            "everyCavalryAttacks": 4,
+            "durationTurns": 2
+          },
           "additionalEffects": [
             {
               "effect": "damage_taken_down",
@@ -4275,8 +4327,9 @@
         "catalog": "catalog.v1.json",
         "stats": "https://kingshotdata.com/heroes/long-fei/",
         "verifiedOn": "2026-10-10",
-        "skillSource": "https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json",
-        "skillVerification": "secondary-only"
+        "skillSource": "https://kingshotdata.com/heroes/long-fei/",
+        "skillVerification": "primary-checked",
+        "skillVerifiedOn": "2026-10-10"
       },
       "starProgression": {
         "sourceRowIndices": "1..31",
@@ -4393,7 +4446,9 @@
             40,
             50
           ],
-          "conditions": {}
+          "conditions": {
+            "procChancePercent": 40
+          }
         },
         {
           "name": "Celestial Sustenance",
@@ -4419,7 +4474,9 @@
             180,
             200
           ],
-          "conditions": {}
+          "conditions": {
+            "procChancePercent": 25
+          }
         }
       ],
       "conquestBaseByHeroLevel": null
