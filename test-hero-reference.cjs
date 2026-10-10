@@ -97,7 +97,8 @@ function validate(d){
    assert.ok(!/^(player|account|username|discord|userId|ingameId)/i.test(key),
     'private player field forbidden '+key);
  }
- assert.equal(primary+secondary,37);
+ assert.equal(primary,37,'every normal expedition skill set must be verified from the original hero page');
+ assert.equal(secondary,0,'no remaining second-hand skill sets');
  // Real display examples: Yang 4★T4 is row 29, Rosa 5★ is row 31.
  const yang=d.records.find(x=>x.name==='Yang').starProgression.expeditionAttackPercent;
  const rosa=d.records.find(x=>x.name==='Rosa').starProgression.expeditionAttackPercent;
@@ -109,6 +110,18 @@ function validate(d){
  assert.equal(rosa[toIndex(5,0)],370.30);
  const amadeus=d.records.find(x=>x.name==='Amadeus').starProgression.expeditionAttackPercent;
  const helga=d.records.find(x=>x.name==='Helga').starProgression.expeditionAttackPercent;
+ // Primary comparison uncovered real errors in the older second-hand list:
+ const marlin=d.records.find(x=>x.name==='Marlin');
+ assert.deepEqual(marlin.expeditionSkills.map(x=>x.name),['Wild Card','Rumhead'],
+  'Marlin has two normal expedition skills; Dynamo is NOT the third');
+ assert.equal(d.records.find(x=>x.name==='Saul').expeditionSkills[2].name,
+  'Positional Battler','Saul official skill spelling');
+ assert.equal(d.records.find(x=>x.name==='Alcar').expeditionSkills[2].name,
+  'Carpe Diem','Alcar official skill spelling');
+ const jabel=d.records.find(x=>x.name==='Jabel');
+ assert.equal(jabel.expeditionSkills.find(x=>x.name==="Hero’s Domain").conditions.procChancePercent,50);
+ const longFei=d.records.find(x=>x.name==='Long Fei');
+ assert.equal(longFei.expeditionSkills.find(x=>x.name==='Art of War').conditions.procChancePercent,25);
  assert.ok(amadeus[30]>helga[30],'do NOT collapse Amadeus Gen1 into regular mythic table');
  assert.ok(d.records.find(x=>x.name==='Diana').starProgression.expeditionAttackPercent[30]<
    d.records.find(x=>x.name==='Howard').starProgression.expeditionAttackPercent[30],
