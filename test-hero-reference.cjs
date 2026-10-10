@@ -67,7 +67,7 @@ function validate(d){
    assert.equal(typeof skill.conditions,'object');
   }
  }
- assert.equal(verified,4,'only four source-checked examples so far');
+ assert.ok(verified>=4,'minimum reference baseline: Yang, Rosa, Petra and Zoe');
  const pairs={Yang:[68.17,540.43],Rosa:[46.71,370.30],
   Petra:[36.61,290.23],Zoe:[30.30,240.19]};
  for(const [name,[first,last]] of Object.entries(pairs)){
