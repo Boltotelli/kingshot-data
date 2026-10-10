@@ -5,6 +5,7 @@ const base=__dirname;
 const data=JSON.parse(fs.readFileSync(path.join(base,'heroes.v1.json'),'utf8'));
 const schema=JSON.parse(fs.readFileSync(path.join(base,'schema.v1.json'),'utf8'));
 const index=JSON.parse(fs.readFileSync(path.join(base,'catalog.v1.json'),'utf8'));
+const tierMap=JSON.parse(fs.readFileSync(path.join(base,'star-tiers.v1.json'),'utf8'));
 const catalogJs=path.join(base,'../catalog.js');
 if(fs.existsSync(catalogJs)){
  const scope={window:{}};vm.runInNewContext(fs.readFileSync(catalogJs,'utf8'),scope);
@@ -18,6 +19,22 @@ const allowedMax={1:200.16,2:240.19,3:290.23,4:370.30,5:444.36,
 const expectedCost=[0,1,1,2,2,2,2,...Array(5).fill(5),15,
  ...Array(5).fill(15),40,...Array(5).fill(40),100,...Array(6).fill(100)];
 function validate(d){
+ assert.equal(tierMap.schemaVersion,1);
+ assert.equal(tierMap.mappingStatus,'verified-by-independent-shard-tables');
+ assert.equal(tierMap.rows.length,31,'complete zero-to-five-star table');
+ assert.equal(tierMap.totalShardsTo5Stars,1065);
+ assert.deepEqual(tierMap.fullStarTotals,[10,40,115,300,600]);
+ assert.deepEqual(tierMap.rows.map(r=>r.shardsToReachStep),expectedCost);
+ assert.equal(tierMap.rows[28].fullStars,4);assert.equal(tierMap.rows[28].partialTier,4);
+ assert.equal(tierMap.rows[28].sourceRow,29,'Yang 4★ T4 source table row');
+ assert.equal(tierMap.rows[30].fullStars,5);assert.equal(tierMap.rows[30].partialTier,0);
+ for(let i=0,total=0;i<tierMap.rows.length;i++){
+  total+=expectedCost[i];
+  assert.deepEqual(tierMap.rows[i],{
+   sourceRow:i+1,step:i,fullStars:Math.floor(i/6),partialTier:i%6,
+   shardsToReachStep:expectedCost[i],cumulativeShards:total
+  });
+ }
  assert.equal(d.schemaVersion,1);assert.equal(d.publicDataOnly,true);
  assert.equal(d.releaseStatus,'research-preview','still lacks level-specific base values');
  assert.equal(schema.properties.publicDataOnly.const,true);
