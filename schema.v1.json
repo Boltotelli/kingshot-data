@@ -1,0 +1,220 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Boltotelli/kingshot-data/main/schema.v1.json",
+  "title": "Public Kingshot Hero Reference v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "updatedOn",
+    "releaseStatus",
+    "publicDataOnly",
+    "notes",
+    "records"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "updatedOn": {
+      "type": "string",
+      "format": "date"
+    },
+    "releaseStatus": {
+      "enum": [
+        "research-preview",
+        "reviewed",
+        "stable"
+      ]
+    },
+    "publicDataOnly": {
+      "const": true
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/hero"
+      }
+    }
+  },
+  "$defs": {
+    "hero": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "troopType",
+        "generation",
+        "status",
+        "source",
+        "starProgression",
+        "expeditionSkills",
+        "conquestBaseByHeroLevel"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "troopType": {
+          "enum": [
+            "infantry",
+            "cavalry",
+            "archer"
+          ]
+        },
+        "generation": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 20
+        },
+        "status": {
+          "enum": [
+            "metadata-only",
+            "partial-sourced",
+            "verified-complete"
+          ]
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "catalog",
+            "stats",
+            "verifiedOn"
+          ],
+          "properties": {
+            "catalog": {
+              "const": "catalog.v1.json"
+            },
+            "stats": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "uri"
+            },
+            "verifiedOn": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "date"
+            }
+          }
+        },
+        "starProgression": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "sourceRowIndices",
+                "rowToDisplayStarTier",
+                "expeditionAttackPercent",
+                "expeditionDefensePercent",
+                "shardsToNextRow"
+              ],
+              "properties": {
+                "sourceRowIndices": {
+                  "const": "1..31"
+                },
+                "rowToDisplayStarTier": {
+                  "enum": [
+                    "unverified"
+                  ]
+                },
+                "expeditionAttackPercent": {
+                  "$ref": "#/$defs/percent31"
+                },
+                "expeditionDefensePercent": {
+                  "$ref": "#/$defs/percent31"
+                },
+                "shardsToNextRow": {
+                  "type": "array",
+                  "minItems": 31,
+                  "maxItems": 31,
+                  "items": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "expeditionSkills": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "effect",
+              "metric",
+              "valuesBySkillLevel",
+              "conditions"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "effect": {
+                "type": "string",
+                "minLength": 1
+              },
+              "metric": {
+                "type": "string",
+                "minLength": 1
+              },
+              "valuesBySkillLevel": {
+                "type": "array",
+                "minItems": 5,
+                "maxItems": 5,
+                "items": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              },
+              "conditions": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "conquestBaseByHeroLevel": {
+          "type": "null"
+        }
+      }
+    },
+    "percent31": {
+      "type": "array",
+      "minItems": 31,
+      "maxItems": 31,
+      "items": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 2000
+      }
+    }
+  }
+}
