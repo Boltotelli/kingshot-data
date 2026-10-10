@@ -1,0 +1,1156 @@
+{
+  "schemaVersion": 1,
+  "updatedOn": "2026-10-10",
+  "releaseStatus": "research-preview",
+  "publicDataOnly": true,
+  "notes": [
+    "Source row indices 1–31 are NOT yet mapped to the in-game 1★ T1..5 progression; a wrong offset would corrupt recommendations.",
+    "No conquest base values at each hero level 1–80 are available. Null signifies unknown, never zero.",
+    "Source skill effects are not damage multipliers and should not be added together without a verified Bear combat model.",
+    "No player IDs, player names, account data, private inputs or screenshot evidence belong in this repository."
+  ],
+  "records": [
+    {
+      "id": "olive",
+      "name": "Olive",
+      "troopType": "archer",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "edwin",
+      "name": "Edwin",
+      "troopType": "cavalry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "forrest",
+      "name": "Forrest",
+      "troopType": "infantry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "seth",
+      "name": "Seth",
+      "troopType": "infantry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "quinn",
+      "name": "Quinn",
+      "troopType": "archer",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "diana",
+      "name": "Diana",
+      "troopType": "archer",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "amane",
+      "name": "Amane",
+      "troopType": "archer",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "yeonwoo",
+      "name": "Yeonwoo",
+      "troopType": "archer",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "gordon",
+      "name": "Gordon",
+      "troopType": "cavalry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "chenko",
+      "name": "Chenko",
+      "troopType": "cavalry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "fahd",
+      "name": "Fahd",
+      "troopType": "cavalry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "howard",
+      "name": "Howard",
+      "troopType": "infantry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "saul",
+      "name": "Saul",
+      "troopType": "archer",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "jabel",
+      "name": "Jabel",
+      "troopType": "cavalry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "helga",
+      "name": "Helga",
+      "troopType": "infantry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "amadeus",
+      "name": "Amadeus",
+      "troopType": "infantry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "marlin",
+      "name": "Marlin",
+      "troopType": "archer",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "hilde",
+      "name": "Hilde",
+      "troopType": "cavalry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "zoe",
+      "name": "Zoe",
+      "troopType": "infantry",
+      "generation": 2,
+      "status": "partial-sourced",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": "https://kingshotdata.com/heroes/zoe/",
+        "verifiedOn": "2026-10-10"
+      },
+      "starProgression": {
+        "sourceRowIndices": "1..31",
+        "rowToDisplayStarTier": "unverified",
+        "expeditionAttackPercent": [
+          30.3,
+          33.12,
+          35.94,
+          38.76,
+          41.58,
+          44.4,
+          49.48,
+          53.42,
+          57.37,
+          61.32,
+          65.27,
+          69.22,
+          76.32,
+          81.84,
+          87.37,
+          92.9,
+          98.42,
+          103.96,
+          113.9,
+          121.64,
+          129.37,
+          137.11,
+          144.85,
+          152.59,
+          166.52,
+          177.35,
+          188.18,
+          199.02,
+          209.86,
+          220.69,
+          240.19
+        ],
+        "expeditionDefensePercent": [
+          30.3,
+          33.12,
+          35.94,
+          38.76,
+          41.58,
+          44.4,
+          49.48,
+          53.42,
+          57.37,
+          61.32,
+          65.27,
+          69.22,
+          76.32,
+          81.84,
+          87.37,
+          92.9,
+          98.42,
+          103.96,
+          113.9,
+          121.64,
+          129.37,
+          137.11,
+          144.85,
+          152.59,
+          166.52,
+          177.35,
+          188.18,
+          199.02,
+          209.86,
+          220.69,
+          240.19
+        ],
+        "shardsToNextRow": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          5,
+          5,
+          5,
+          5,
+          5,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "expeditionSkills": [
+        {
+          "name": "Sundering Wound",
+          "effect": "damage_over_time",
+          "metric": "damage_percent",
+          "valuesBySkillLevel": [
+            8,
+            16,
+            24,
+            32,
+            40
+          ],
+          "conditions": {
+            "procChancePercent": 20,
+            "durationTurns": 3
+          }
+        },
+        {
+          "name": "Charisma",
+          "effect": "squad_attack_buff",
+          "metric": "attack_percent",
+          "valuesBySkillLevel": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Infinite Arsenal",
+          "effect": "enemy_damage_taken_debuff",
+          "metric": "amplification_percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {
+            "procChancePercent": 50
+          }
+        }
+      ],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "jaegar",
+      "name": "Jaegar",
+      "troopType": "archer",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "petra",
+      "name": "Petra",
+      "troopType": "cavalry",
+      "generation": 3,
+      "status": "partial-sourced",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": "https://kingshotdata.com/heroes/petra/",
+        "verifiedOn": "2026-10-10"
+      },
+      "starProgression": {
+        "sourceRowIndices": "1..31",
+        "rowToDisplayStarTier": "unverified",
+        "expeditionAttackPercent": [
+          36.61,
+          40.02,
+          43.43,
+          46.84,
+          50.24,
+          53.65,
+          59.78,
+          64.55,
+          69.32,
+          74.09,
+          78.87,
+          83.64,
+          92.22,
+          98.89,
+          105.57,
+          112.26,
+          118.93,
+          125.61,
+          137.63,
+          146.99,
+          156.32,
+          165.68,
+          175.03,
+          184.38,
+          201.22,
+          214.3,
+          227.39,
+          240.48,
+          253.58,
+          266.67,
+          290.23
+        ],
+        "expeditionDefensePercent": [
+          36.61,
+          40.02,
+          43.43,
+          46.84,
+          50.24,
+          53.65,
+          59.78,
+          64.55,
+          69.32,
+          74.09,
+          78.87,
+          83.64,
+          92.22,
+          98.89,
+          105.57,
+          112.26,
+          118.93,
+          125.61,
+          137.63,
+          146.99,
+          156.32,
+          165.68,
+          175.03,
+          184.38,
+          201.22,
+          214.3,
+          227.39,
+          240.48,
+          253.58,
+          266.67,
+          290.23
+        ],
+        "shardsToNextRow": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          5,
+          5,
+          5,
+          5,
+          5,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "expeditionSkills": [
+        {
+          "name": "Evil Eye",
+          "effect": "enemy_damage_taken_debuff",
+          "metric": "amplification_percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {
+            "procChancePercent": 50
+          }
+        },
+        {
+          "name": "The Favor",
+          "effect": "squad_attack_buff",
+          "metric": "damage_percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {
+            "procChancePercent": 50
+          }
+        },
+        {
+          "name": "The Shield",
+          "effect": "damage_taken_reduction",
+          "metric": "reduction_percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {
+            "procChancePercent": 40
+          }
+        }
+      ],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "eric",
+      "name": "Eric",
+      "troopType": "infantry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "rosa",
+      "name": "Rosa",
+      "troopType": "archer",
+      "generation": 4,
+      "status": "partial-sourced",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": "https://kingshotdata.com/heroes/rosa/",
+        "verifiedOn": "2026-10-10"
+      },
+      "starProgression": {
+        "sourceRowIndices": "1..31",
+        "rowToDisplayStarTier": "unverified",
+        "expeditionAttackPercent": [
+          46.71,
+          51.06,
+          55.41,
+          59.76,
+          64.1,
+          68.45,
+          76.28,
+          82.36,
+          88.45,
+          94.53,
+          100.62,
+          106.71,
+          117.66,
+          126.17,
+          134.7,
+          143.23,
+          151.74,
+          160.27,
+          175.6,
+          187.53,
+          199.45,
+          211.38,
+          223.31,
+          235.25,
+          256.72,
+          273.41,
+          290.12,
+          306.82,
+          323.53,
+          340.23,
+          370.3
+        ],
+        "expeditionDefensePercent": [
+          46.71,
+          51.06,
+          55.41,
+          59.76,
+          64.1,
+          68.45,
+          76.28,
+          82.36,
+          88.45,
+          94.53,
+          100.62,
+          106.71,
+          117.66,
+          126.17,
+          134.7,
+          143.23,
+          151.74,
+          160.27,
+          175.6,
+          187.53,
+          199.45,
+          211.38,
+          223.31,
+          235.25,
+          256.72,
+          273.41,
+          290.12,
+          306.82,
+          323.53,
+          340.23,
+          370.3
+        ],
+        "shardsToNextRow": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          5,
+          5,
+          5,
+          5,
+          5,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "expeditionSkills": [
+        {
+          "name": "Chaos Gambit",
+          "effect": "squad_damage_dealt_buff",
+          "metric": "damage_percent",
+          "valuesBySkillLevel": [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          "conditions": {
+            "procChancePercent": 40
+          }
+        },
+        {
+          "name": "Rose of War",
+          "effect": "enemy_damage_dealt_debuff",
+          "metric": "reduction_percent",
+          "valuesBySkillLevel": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "conditions": {}
+        },
+        {
+          "name": "Golden Rhythm",
+          "effect": "archer_attack_buff",
+          "metric": "attack_percent",
+          "valuesBySkillLevel": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "conditions": {}
+        }
+      ],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "margot",
+      "name": "Margot",
+      "troopType": "cavalry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "alcar",
+      "name": "Alcar",
+      "troopType": "infantry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "vivian",
+      "name": "Vivian",
+      "troopType": "archer",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "thrud",
+      "name": "Thrud",
+      "troopType": "cavalry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "long-fei",
+      "name": "Long Fei",
+      "troopType": "infantry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "yang",
+      "name": "Yang",
+      "troopType": "archer",
+      "generation": 6,
+      "status": "partial-sourced",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": "https://kingshotdata.com/heroes/yang/",
+        "verifiedOn": "2026-10-10"
+      },
+      "starProgression": {
+        "sourceRowIndices": "1..31",
+        "rowToDisplayStarTier": "unverified",
+        "expeditionAttackPercent": [
+          68.17,
+          74.52,
+          80.86,
+          87.21,
+          93.56,
+          99.9,
+          111.32,
+          120.2,
+          129.09,
+          137.97,
+          146.85,
+          155.74,
+          171.72,
+          184.14,
+          196.59,
+          209.03,
+          221.45,
+          233.9,
+          256.28,
+          273.7,
+          291.09,
+          308.5,
+          325.92,
+          343.33,
+          374.68,
+          399.03,
+          423.41,
+          447.8,
+          472.18,
+          496.56,
+          540.43
+        ],
+        "expeditionDefensePercent": [
+          68.17,
+          74.52,
+          80.86,
+          87.21,
+          93.56,
+          99.9,
+          111.32,
+          120.2,
+          129.09,
+          137.97,
+          146.85,
+          155.74,
+          171.72,
+          184.14,
+          196.59,
+          209.03,
+          221.45,
+          233.9,
+          256.28,
+          273.7,
+          291.09,
+          308.5,
+          325.92,
+          343.33,
+          374.68,
+          399.03,
+          423.41,
+          447.8,
+          472.18,
+          496.56,
+          540.43
+        ],
+        "shardsToNextRow": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          5,
+          5,
+          5,
+          5,
+          5,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "expeditionSkills": [
+        {
+          "name": "Avalanche",
+          "effect": "extra_squad_strike",
+          "metric": "damage_percent",
+          "valuesBySkillLevel": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ],
+          "conditions": {
+            "everyTurns": 4
+          }
+        },
+        {
+          "name": "Ice Zone",
+          "effect": "archer_extra_hit",
+          "metric": "damage_percent",
+          "valuesBySkillLevel": [
+            20,
+            40,
+            60,
+            80,
+            100
+          ],
+          "conditions": {
+            "procChancePercent": 40
+          }
+        },
+        {
+          "name": "Ambush",
+          "effect": "squad_damage_dealt_buff",
+          "metric": "proc_chance_percent",
+          "valuesBySkillLevel": [
+            8,
+            16,
+            24,
+            32,
+            40
+          ],
+          "conditions": {
+            "effectDamageDealtPercent": 50
+          }
+        }
+      ],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "sophia",
+      "name": "Sophia",
+      "troopType": "cavalry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "triton",
+      "name": "Triton",
+      "troopType": "infantry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "wee-woo",
+      "name": "Wee & Woo",
+      "troopType": "archer",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "ava",
+      "name": "Ava",
+      "troopType": "cavalry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "charles",
+      "name": "Charles",
+      "troopType": "infantry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "luna",
+      "name": "Luna",
+      "troopType": "archer",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "liz",
+      "name": "Liz",
+      "troopType": "cavalry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    },
+    {
+      "id": "diego",
+      "name": "Diego",
+      "troopType": "infantry",
+      "generation": null,
+      "status": "metadata-only",
+      "source": {
+        "catalog": "catalog.v1.json",
+        "stats": null,
+        "verifiedOn": null
+      },
+      "starProgression": null,
+      "expeditionSkills": [],
+      "conquestBaseByHeroLevel": null
+    }
+  ]
+}
