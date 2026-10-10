@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "source": "https://github.com/Boltotelli/welcome-nrw/tree/feature/bear-optimizer-nrw-prototype/bear",
+  "updatedOn": "2026-10-10",
+  "heroes": [
+    {
+      "name": "Olive",
+      "type": "archer"
+    },
+    {
+      "name": "Edwin",
+      "type": "cavalry"
+    },
+    {
+      "name": "Forrest",
+      "type": "infantry"
+    },
+    {
+      "name": "Seth",
+      "type": "infantry"
+    },
+    {
+      "name": "Quinn",
+      "type": "archer"
+    },
+    {
+      "name": "Diana",
+      "type": "archer"
+    },
+    {
+      "name": "Amane",
+      "type": "archer"
+    },
+    {
+      "name": "Yeonwoo",
+      "type": "archer"
+    },
+    {
+      "name": "Gordon",
+      "type": "cavalry"
+    },
+    {
+      "name": "Chenko",
+      "type": "cavalry"
+    },
+    {
+      "name": "Fahd",
+      "type": "cavalry"
+    },
+    {
+      "name": "Howard",
+      "type": "infantry"
+    },
+    {
+      "name": "Saul",
+      "type": "archer"
+    },
+    {
+      "name": "Jabel",
+      "type": "cavalry"
+    },
+    {
+      "name": "Helga",
+      "type": "infantry"
+    },
+    {
+      "name": "Amadeus",
+      "type": "infantry"
+    },
+    {
+      "name": "Marlin",
+      "type": "archer"
+    },
+    {
+      "name": "Hilde",
+      "type": "cavalry"
+    },
+    {
+      "name": "Zoe",
+      "type": "infantry"
+    },
+    {
+      "name": "Jaegar",
+      "type": "archer"
+    },
+    {
+      "name": "Petra",
+      "type": "cavalry"
+    },
+    {
+      "name": "Eric",
+      "type": "infantry"
+    },
+    {
+      "name": "Rosa",
+      "type": "archer"
+    },
+    {
+      "name": "Margot",
+      "type": "cavalry"
+    },
+    {
+      "name": "Alcar",
+      "type": "infantry"
+    },
+    {
+      "name": "Vivian",
+      "type": "archer"
+    },
+    {
+      "name": "Thrud",
+      "type": "cavalry"
+    },
+    {
+      "name": "Long Fei",
+      "type": "infantry"
+    },
+    {
+      "name": "Yang",
+      "type": "archer"
+    },
+    {
+      "name": "Sophia",
+      "type": "cavalry"
+    },
+    {
+      "name": "Triton",
+      "type": "infantry"
+    },
+    {
+      "name": "Wee & Woo",
+      "type": "archer"
+    },
+    {
+      "name": "Ava",
+      "type": "cavalry"
+    },
+    {
+      "name": "Charles",
+      "type": "infantry"
+    },
+    {
+      "name": "Luna",
+      "type": "archer"
+    },
+    {
+      "name": "Liz",
+      "type": "cavalry"
+    },
+    {
+      "name": "Diego",
+      "type": "infantry"
+    }
+  ]
+}
