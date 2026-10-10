@@ -1,0 +1,52 @@
+name: Validate public Kingshot hero reference
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*.json'
+      - '*.cjs'
+      - '.github/workflows/validate.yml'
+      - 'README.md'
+  pull_request:
+    paths:
+      - '*.json'
+      - '*.cjs'
+      - '.github/workflows/validate.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Schema and source integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate source-backed hero records and privacy rules
+        run: node test-hero-reference.cjs
+      - name: Install JSON Schema validator
+        run: python3 -m pip install --disable-pip-version-check --quiet jsonschema==4.23.0
+      - name: Validate versioned public JSON schema
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          from jsonschema import Draft202012Validator, FormatChecker
+          schema = json.loads(Path('schema.v1.json').read_text())
+          dataset = json.loads(Path('heroes.v1.json').read_text())
+          catalog = json.loads(Path('catalog.v1.json').read_text())
+          Draft202012Validator.check_schema(schema)
+          Draft202012Validator(schema, format_checker=FormatChecker()).validate(dataset)
+          assert catalog['schemaVersion'] == 1
+          assert len(catalog['heroes']) == len(dataset['records'])
+          assert not any(
+              any(key.lower() in {'playerid','userid','discordid','username','accountid','email'}
+                  for key in record)
+              for record in dataset['records']
+          ), 'Player-related private fields are forbidden in public references'
+          print(f"Validated {len(dataset['records'])} public heroes against JSON Schema v1.")
+          PY
