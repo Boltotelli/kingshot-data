@@ -11,7 +11,7 @@ This repository contains public Kingshot hero reference values for the separate 
 |---|---:|---|
 | Canonical hero names and troop types | **37/37** | Checked against the app's existing catalog |
 | Generation and expedition attack/defense bonuses at all **31 progression rows** | **37/37** | Reference tables, with 28 source maxima cross-checked |
-| Expedition skill names and numeric values at **5 skill levels** | **37/37** | 12 checked against Kingshot Database; 25 older sets remain secondary-source pending direct verification |
+| Expedition skill names and numeric values at **5 skill levels** | **37/37** | All 37 normal expedition skill sets checked against each hero’s Kingshot Database page |
 | Full conquest base stats separately for every hero level 1–80 | **0/37** | **Not sourced; explicitly null** |
 | Full widget/exclusive-weapon progression and reliable Bear damage simulation | Not yet | **Not implemented** |
 
@@ -63,11 +63,39 @@ Each hero has its own original-reference URL in `source.stats`. Main dataset:
 
 - [Kingshot Database](https://kingshotdata.com/category/heroes/) — individual hero progression tables and skill values.
 - [Kingshot Hero Shards](https://kingshotdata.kr/en/database/hero-shards.html), [Kingshot Alliance Command](https://www.kingshotcommand.com/hero-shards), [Kingshot.net Shard Calculator](https://v2.kingshot.net/hero-shard-calculator) — independent shard/tier mapping.
-- [g2384/Kingshot-Data](https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json) — numeric skill reference for **25** older heroes pending line-by-line comparison with the primary source. These 25 records carry `skillVerification: "secondary-only"`, not `primary-checked`.
+- [g2384/Kingshot-Data](https://github.com/g2384/Kingshot-Data/blob/main/heroes2.json) — numeric skill reference for A secondary snapshot helped bootstrap 25 older heroes; **all 25 have now been individually checked** against their original Kingshot Database pages and carry `skillVerification: "primary-checked"`. The original secondary reference remains useful for audit history.
 
 Published game-guide figures may occasionally differ by 0.01 percentage points due to rounding. We preserve the named primary source's values and never manufacture absent rows. Skill `conditions` are documented where directly verified; empty conditions means **not yet recorded**, NOT "always active."
 
 **Not a damage model:** The Bear Optimizer's existing Yang/Rosa preference is a provisional heuristic and is NOT yet replaced or validated by this data. The 31 hero bonuses alone do not specify skill proc timing, stacking, battle damage, widget damage or complete troop interactions. Do not infer an exact best leader from these JSON values alone.
+
+
+## Primary skill verification — 2026-10-10
+
+Every one of the 37 regular Expedition skill sets is now checked against the
+individual source URL attached to its hero record. Important corrections
+found while comparing the 25 older secondary-source records:
+
+- **Marlin** has **two normal Expedition skills**, Wild Card and Rumhead.
+  The third skill “Dynamo” in the secondary snapshot is **not** present in
+  the primary page’s normal Expedition list and was removed. Exclusive
+  weapon bonuses are a separate system.
+- **Saul:** corrected to **Positional Battler**, not “Positional Batter”.
+- **Alcar:** corrected to **Carpe Diem**, not “Capre Diem”.
+
+Sources: https://kingshotdata.com/heroes/marlin/ ,
+https://kingshotdata.com/heroes/saul/ ,
+https://kingshotdata.com/heroes/alcar/ .
+
+Source-verified chance/turn conditions were added where available, but an
+empty `conditions` object still means **not captured**, not “always on”.
+The reference retains `releaseStatus: research-preview` because a correct
+skill list is not a calibrated Bear damage formula and full hero base-stat
+progressions by level 1–80 remain unsourced.
+
+The Bear Optimizer will initially display the source-backed progression
+numbers and skill effects as **explanatory evidence**. Do not sum skill
+percentages or replace damage simulation with an arbitrary bonus multiplier.
 
 ## Privacy and future architecture
 
