@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "verifiedOn": "2026-10-10",
+  "mappingStatus": "verified-by-independent-shard-tables",
+  "description": "A 31-row progression: 0★ at row 1; 6 increments per full star; final 5★ at row 31. Partial T1..T5 are additional progress AFTER the last full star.",
+  "primarySource": "https://kingshotdata.com/heroes/yang/",
+  "independentSources": [
+    "https://kingshotdata.kr/en/database/hero-shards.html",
+    "https://www.kingshotcommand.com/hero-shards",
+    "https://v2.kingshot.net/hero-shard-calculator"
+  ],
+  "formula": "sourceRow=fullStars*6+partialTier+1",
+  "totalShardsTo5Stars": 1065,
+  "fullStarTotals": [
+    10,
+    40,
+    115,
+    300,
+    600
+  ],
+  "rows": [
+    {
+      "sourceRow": 1,
+      "step": 0,
+      "fullStars": 0,
+      "partialTier": 0,
+      "shardsToReachStep": 0,
+      "cumulativeShards": 0
+    },
+    {
+      "sourceRow": 2,
+      "step": 1,
+      "fullStars": 0,
+      "partialTier": 1,
+      "shardsToReachStep": 1,
+      "cumulativeShards": 1
+    },
+    {
+      "sourceRow": 3,
+      "step": 2,
+      "fullStars": 0,
+      "partialTier": 2,
+      "shardsToReachStep": 1,
+      "cumulativeShards": 2
+    },
+    {
+      "sourceRow": 4,
+      "step": 3,
+      "fullStars": 0,
+      "partialTier": 3,
+      "shardsToReachStep": 2,
+      "cumulativeShards": 4
+    },
+    {
+      "sourceRow": 5,
+      "step": 4,
+      "fullStars": 0,
+      "partialTier": 4,
+      "shardsToReachStep": 2,
+      "cumulativeShards": 6
+    },
+    {
+      "sourceRow": 6,
+      "step": 5,
+      "fullStars": 0,
+      "partialTier": 5,
+      "shardsToReachStep": 2,
+      "cumulativeShards": 8
+    },
+    {
+      "sourceRow": 7,
+      "step": 6,
+      "fullStars": 1,
+      "partialTier": 0,
+      "shardsToReachStep": 2,
+      "cumulativeShards": 10
+    },
+    {
+      "sourceRow": 8,
+      "step": 7,
+      "fullStars": 1,
+      "partialTier": 1,
+      "shardsToReachStep": 5,
+      "cumulativeShards": 15
+    },
+    {
+      "sourceRow": 9,
+      "step": 8,
+      "fullStars": 1,
+      "partialTier": 2,
+      "shardsToReachStep": 5,
+      "cumulativeShards": 20
+    },
+    {
+      "sourceRow": 10,
+      "step": 9,
+      "fullStars": 1,
+      "partialTier": 3,
+      "shardsToReachStep": 5,
+      "cumulativeShards": 25
+    },
+    {
+      "sourceRow": 11,
+      "step": 10,
+      "fullStars": 1,
+      "partialTier": 4,
+      "shardsToReachStep": 5,
+      "cumulativeShards": 30
+    },
+    {
+      "sourceRow": 12,
+      "step": 11,
+      "fullStars": 1,
+      "partialTier": 5,
+      "shardsToReachStep": 5,
+      "cumulativeShards": 35
+    },
+    {
+      "sourceRow": 13,
+      "step": 12,
+      "fullStars": 2,
+      "partialTier": 0,
+      "shardsToReachStep": 15,
+      "cumulativeShards": 50
+    },
+    {
+      "sourceRow": 14,
+      "step": 13,
+      "fullStars": 2,
+      "partialTier": 1,
+      "shardsToReachStep": 15,
+      "cumulativeShards": 65
+    },
+    {
+      "sourceRow": 15,
+      "step": 14,
+      "fullStars": 2,
+      "partialTier": 2,
+      "shardsToReachStep": 15,
+      "cumulativeShards": 80
+    },
+    {
+      "sourceRow": 16,
+      "step": 15,
+      "fullStars": 2,
+      "partialTier": 3,
+      "shardsToReachStep": 15,
+      "cumulativeShards": 95
+    },
+    {
+      "sourceRow": 17,
+      "step": 16,
+      "fullStars": 2,
+      "partialTier": 4,
+      "shardsToReachStep": 15,
+      "cumulativeShards": 110
+    },
+    {
+      "sourceRow": 18,
+      "step": 17,
+      "fullStars": 2,
+      "partialTier": 5,
+      "shardsToReachStep": 15,
+      "cumulativeShards": 125
+    },
+    {
+      "sourceRow": 19,
+      "step": 18,
+      "fullStars": 3,
+      "partialTier": 0,
+      "shardsToReachStep": 40,
+      "cumulativeShards": 165
+    },
+    {
+      "sourceRow": 20,
+      "step": 19,
+      "fullStars": 3,
+      "partialTier": 1,
+      "shardsToReachStep": 40,
+      "cumulativeShards": 205
+    },
+    {
+      "sourceRow": 21,
+      "step": 20,
+      "fullStars": 3,
+      "partialTier": 2,
+      "shardsToReachStep": 40,
+      "cumulativeShards": 245
+    },
+    {
+      "sourceRow": 22,
+      "step": 21,
+      "fullStars": 3,
+      "partialTier": 3,
+      "shardsToReachStep": 40,
+      "cumulativeShards": 285
+    },
+    {
+      "sourceRow": 23,
+      "step": 22,
+      "fullStars": 3,
+      "partialTier": 4,
+      "shardsToReachStep": 40,
+      "cumulativeShards": 325
+    },
+    {
+      "sourceRow": 24,
+      "step": 23,
+      "fullStars": 3,
+      "partialTier": 5,
+      "shardsToReachStep": 40,
+      "cumulativeShards": 365
+    },
+    {
+      "sourceRow": 25,
+      "step": 24,
+      "fullStars": 4,
+      "partialTier": 0,
+      "shardsToReachStep": 100,
+      "cumulativeShards": 465
+    },
+    {
+      "sourceRow": 26,
+      "step": 25,
+      "fullStars": 4,
+      "partialTier": 1,
+      "shardsToReachStep": 100,
+      "cumulativeShards": 565
+    },
+    {
+      "sourceRow": 27,
+      "step": 26,
+      "fullStars": 4,
+      "partialTier": 2,
+      "shardsToReachStep": 100,
+      "cumulativeShards": 665
+    },
+    {
+      "sourceRow": 28,
+      "step": 27,
+      "fullStars": 4,
+      "partialTier": 3,
+      "shardsToReachStep": 100,
+      "cumulativeShards": 765
+    },
+    {
+      "sourceRow": 29,
+      "step": 28,
+      "fullStars": 4,
+      "partialTier": 4,
+      "shardsToReachStep": 100,
+      "cumulativeShards": 865
+    },
+    {
+      "sourceRow": 30,
+      "step": 29,
+      "fullStars": 4,
+      "partialTier": 5,
+      "shardsToReachStep": 100,
+      "cumulativeShards": 965
+    },
+    {
+      "sourceRow": 31,
+      "step": 30,
+      "fullStars": 5,
+      "partialTier": 0,
+      "shardsToReachStep": 100,
+      "cumulativeShards": 1065
+    }
+  ]
+}
